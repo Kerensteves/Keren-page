@@ -46,7 +46,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #1212add0;
+    background-color: #4f46e5;
     padding: 10px 0;
     position: sticky;
     top: 0;
@@ -161,13 +161,13 @@ body {
 }
 
 .titulo .titulo_texto p {
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI''Segoe UI', Tahoma, Geneva, Verdana;
     margin: 0 0 10px 0;
     text-align: left;
-    font-size: 1.5rem;
-    color: #001554dc;
+    font-size: 1.3rem;
+    color: #000000dc;
     line-height: 1.5;
-    font-weight: bolder;
+    font-weight: normal;
 }
 
 .titulo img {
@@ -337,6 +337,7 @@ body {
     width: 300px;
     height: auto;
     border-radius: 20px;
+    box-shadow: 0 4px 12px #0000004d; 
 }
 
 .cursosavanzados img{
@@ -377,10 +378,10 @@ body {
 .linea_curso span {
     text-shadow: 1px 1px 3px #00000080;
     font-family:'Ancizar Serif', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-align: left;
     flex: 1;
-    font-weight: bold;
+    font-weight: normal;
     color: white;
 }
 
@@ -431,7 +432,6 @@ body {
     color: #1515ec;
     text-shadow: 1px 1px 3px #00000080;
 }
-
 /*mis docentes*/
 .curs_doc {
     text-align: center;
@@ -585,3 +585,92 @@ body {
     font-size: 1rem;
     font-family: 'Ancizar Serif', sans-serif;
 }
+/* Ajustes responsive para móviles */
+@media (max-width: 768px) {
+
+    /* Sección perfil_box y titulo */
+    .perfil_box {
+        padding: 40px;
+        margin: 20px 10px;
+    }
+
+    .titulo {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .titulo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .mi_nombre h1 {
+        font-size: 2rem;
+    }
+
+    /* Ajustes en subtitulos */
+    .subtitulo {
+        font-size: 2rem;
+    }
+
+    .curs_doc h3 {
+        font-size: 2rem;
+    }
+
+    /* Ajustes en habilidades y cualidades */
+    .contenido_cuadro {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .sub_columna {
+        padding: 15px;
+    }
+
+    .sub_columna h4 {
+        font-size: 1.8rem;
+    }
+
+    .sub_columna ol {
+        font-size: 1.2rem;
+    }
+
+    /* Ajustes en datos de amigos */
+    .datos_amigos ul {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .datos_amigos img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .datos_amigos a {
+        font-size: 1.2rem;
+    }
+
+    /* Ajustes en cursos */
+    .cursosavanzados h2, .cursosactuales h2, .misamigos h2 {
+        font-size: 2.3rem;
+        height: auto;
+        padding: 20px;
+    }
+
+    .cursosavanzados img, .cursosactuales img {
+        width: 250px;
+    }
+
+    /* Línea de cursos barra de progreso */
+    .linea_curso span {
+        font-size: 1.5rem;
+    }
+
+    .porcentaje {
+        font-size: 1.5rem;
+    }
+}
+
+
